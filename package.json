@@ -1,0 +1,13 @@
+{
+  "name": "flower_know",
+  "version": "0.1.0",
+  "author": "jason",
+  "devDependencies": {
+    "grunt": "0.x.x",
+    "grunt-contrib-concat": "~0.1.1",
+    "grunt-contrib-cssmin": "^0.12.3",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "~0.1.4"
+  }
+}

@@ -1,0 +1,77 @@
+@-webkit-keyframes go { 
+    0% {-webkit-transform: translate(0,15px);opacity:0.8;}
+    50% {-webkit-transform: translate(0,0px);opacity:1;}
+    100% {-webkit-transform: translate(0,15px);opacity:0.8;}
+     }
+    @font-face {
+        font-family: 'yaya';
+        src: url('../fonts/yaya.eot?') format('eot');/*IE*/
+        src:url('../fonts/yaya.woff') format('woff'), url('../fonts/yaya.ttf') format('truetype');/*non-IE*/
+    }
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: "yaya",Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    /* custom */
+    .col-xs-12.pic{margin: 0;padding:0;}
+    .swiper-container .pic{position: absolute;top:0;left: 0;z-index: 0;}
+    .swiper-container .pic img{width: 100%;height: auto}
+    .swiper-container .pic .arrow{position: absolute;top:0;left: 0;z-index: 1;}
+    .swiper-container .col-xs-12.pic .arrow img{width: 20px;height:auto;  -webkit-animation: go 1s linear infinite;padding:20px;}
+    .swiper-container .col-xs-12.pic form {position: absolute;width: 200px;top:0;left: 0;}
+    .swiper-container .col-xs-12.pic button {background: #1c9742;color: #fff;}
+    .swiper-container form .error {color: red;}
+
+    .prewxpay{position: absolute;top:0;font-size: 14px;font-weight: 700;width: 200px}
+    .prewxpay img{width: 20px;height: auto;}
+    .prewxpay .line{
+        width: 100%;
+        height: 1px;
+        border: 1px solid #52524f;
+        margin: 10px 0px;
+    }
+    .prewxpay p{text-align: center;}
+    .wxinfo{text-align: center;}
+    .swiper-container form input {height: 26px;line-height: 26px;}
+
+    /* 文字动画 */
+    .animation-word{
+        width: 100%;
+        z-index: 2;
+        opacity: 0;
+    }
+    .animation-word img{
+        height: auto;
+    }
